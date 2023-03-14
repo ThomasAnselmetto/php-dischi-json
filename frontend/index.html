@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- METATAGS -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,6 +20,9 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="../frontend/CSS/style.css" />
 
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- VUE JS -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
@@ -27,6 +31,22 @@
   </head>
 
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="container"></div>
+    </div>
   </body>
 </html>
+
+<!-- Descrizione
+Dobbiamo creare una web-app che permetta di leggere una lista di dischi presente nel nostro server.
+
+Stack
+Html, CSS, VueJS (importato tramite CDN), axios, PHP
+
+Consigli
+Nello svolgere l'esercizio seguite un approccio graduale.
+Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a comunicare correttamente con il vostro script PHP (le vostre "API").
+Solo a questo punto sarà utile passare alla lettura della lista da un file JSON.
+
+Bonus
+Al click su un disco, recuperare e mostrare i dati del disco selezionato. -->
