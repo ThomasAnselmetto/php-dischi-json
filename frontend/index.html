@@ -27,15 +27,24 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <!-- JS -->
-    <script type="text/javascript" src="../frontend/JS/app.js" defer></script>
+    <script type="text/javascript" src="./JS/app.js" defer></script>
   </head>
 
   <body>
     <div id="app">
       <div class="container">
-        <ul>
-          <li>{{this.songs}}</li>
-        </ul>
+        <div class="row">
+          <div v-for="song in songs" class="col-4">
+            <div class="card">
+              <img :src="song.poster" class="card-img-top" alt="poster-img" />
+              <div class="card-body">
+                <h4 class="card-title">{{song.title}}</h4>
+                <p class="card-text">{{song.author}}</p>
+                <h5>{{song.year}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

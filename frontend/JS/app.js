@@ -10,6 +10,7 @@ const app = Vue.createApp({
       .get("http://localhost/boolean/php-dischi-json/API/get-list.php")
       .then((response) => {
         this.songs = response.data;
+        console.log(this.songs);
       });
   },
 });
